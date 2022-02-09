@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<header>
+  <meta charset="utf-8">
+  <title>Olympus (OHM)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <style>
+    html, body {
+      margin: 0;
+      height: 560px;
+      width: 400px; 
+      overflow:hidden;   
+    }
+    .divMainBg {
+      background-image: url("./bg.png");
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      overflow:hidden;
+    }
+    .coinDataSummary{
+      background: #F5F5F5;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      height: 500px;
+      width: 350px;
+      position: relative;
+      margin:auto;
+      opacity: 0.8;
+      overflow:hidden;
+    }
+  .fadeIn {
+    animation-name: fadeIn; 
+    animation-duration: 1s; 		
+    animation-fill-mode: forwards;
+    background-size:cover;
+    overflow:hidden;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0; 
+        background-size:cover;
+        overflow:hidden;
+      }
+      100% { 
+        opacity: 1; 
+        background-size:cover;
+        overflow:hidden;
+      }
+    }  
+    .tdl {
+      text-align: left;
+    }            
+    .tdc {
+      text-align: center;
+    }
+    .tdr {
+      text-align: right;
+    }      
+    .tdvt {
+      vertical-align: top;
+    }
+    .tdvb {
+      vertical-align: bottom;
+    }
+    .o20pt{
+      font-size:20pt; 
+      font-family:VectisW01-Regular, Oxygen, Trebuchet MS;
+    }
+    .o16pt{
+      font-size:16pt; 
+      font-family:VectisW01-Regular, Oxygen, Trebuchet MS;
+    }
+    .sectionTitle{
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    table { border-collapse: separate; border-spacing: 0px; } 
+    table { border-collapse: collapse; border-spacing: 0px; }  
+    th, td { padding: 0px; }
+  </style>
+</header>
+<body>
+  <div id="divMain" class="divMainBg fadeIn">
+    <div id="divCoinData" class="coinDataSummary">
+      <table id="htmlTableCoinInfo" style="width: 100%">
+        <tr>
+          <td colspan="3" class="tdvt">
+            <table style="width: 100%;">
+              <tr>
+                  <td>&nbsp;<span id="span_imageSrc"></span></td>
+                  <td class="tdc"><span id="span_name"></span></td>
+                  <td class="tdr"><span id="span_rank"></span>&nbsp;</td>
+              </tr>
+            </table>           
+          </td>        
+        </tr>
+        <tr>
+          <td colspan="3"><hr id="hr1" style="visibility:hidden" /></td>
+        </tr>
+        <tr class="o20pt">
+          <td><span></span></td>        
+          <td class="tdc"><span id="span_price_section" class="o20pt sectionTitle"></span></td>       
+          <td><span></span></td>     
+        </tr>
+        <tr class="o20pt">
+          <td><span id="span_24hr_low"></span></td>        
+          <td class="tdc">
+            <span id="span_current_price"></span>        
+          </td>       
+          <td class="tdr"></td>  
+        </tr>
+        <tr>
+          <td colspan="3" class="tdc">
+            <span id="span_24hr_range_header" class="o20pt sectionTitle"></span>
+            <span id="span_24hr_range"></span><span id="span_priceChangePct24h"></span>
+          </td>       
+        </tr>
+        <tr>
+          <td></td>        
+          <td class="tdc">
+            <span id="span_1hr_label" class="o16pt"></span><span id="span_1hr"></span>
+          </td>       
+          <td></td>  
+        </tr>
+        <tr>
+          <td colspan="3" class="tdc">
+            <hr id="hr2" style="visibility:hidden" />
+            <br/>
+            <span id="span_homepage"></span>
+          </td>        
+        </tr>
+        <tr>
+          <td colspan="3" class="tdvb tdc">
+            <br/>
+            <span id="span_coin_gecko" style="font-size:10pt; font-family:Oxygen, Arial, Trebuchet MS"></span>
+          </td>        
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script type="module" src="./popup.mjs"></script>
+</body>
+</html>

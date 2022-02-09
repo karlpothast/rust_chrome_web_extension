@@ -1,0 +1,14 @@
+{
+  "name": "Olympus DAO Price Ticker - Powered By Rust and WASM",
+  "description": "Olympus DAO live price ticker extension using Rust, WASM, CSS, JavaScript and the CoinGecko API",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon16.png",
+    "icons": {
+      "16": "icon16.png"
+    }
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
