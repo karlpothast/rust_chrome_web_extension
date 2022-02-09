@@ -10,7 +10,7 @@ WASM does not currently work on manifest 3 so the code here is manifest 2 until 
 
 * I plan to add rebase data to the UI and have WASM process the CSS as well.  Then we can compare performance and resource usage of this version to the JS and CSS only version on the store currently :
 
-# https://chrome.google.com/webstore/detail/olympus-dao-price-ticker/mhhponffbhefikoiafdagegpdfnmpecc
+https://chrome.google.com/webstore/detail/olympus-dao-price-ticker/mhhponffbhefikoiafdagegpdfnmpecc
 
 References :
 
