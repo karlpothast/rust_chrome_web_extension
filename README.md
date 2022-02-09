@@ -13,6 +13,8 @@ https://chrome.google.com/webstore/detail/olympus-dao-price-ticker/mhhponffbhefi
 
 References :
 https://bugs.chromium.org/p/chromium/issues/detail?id=1173354
+
 https://groups.google.com/a/chromium.org/g/chromium-extensions/c/zVaQo3jpSpw/m/932YZv2UAgAJ
+
 https://developer.chrome.com/blog/mv2-transition/
 
