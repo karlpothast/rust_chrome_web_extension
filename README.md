@@ -9,9 +9,11 @@ WASM does not currently work on manifest 3 so the code here is manifest 2 until 
 * This extension is approximately the same size as MetaMask (450w x 750h). It executes JavaScript from the WASM file generated with Rust. It gets its data from the Coin Gecko API.
 
 * I plan to add rebase data to the UI and have WASM process the CSS as well.  Then we can compare performance and resource usage of this version to the JS and CSS only version on the store currently :
-https://chrome.google.com/webstore/detail/olympus-dao-price-ticker/mhhponffbhefikoiafdagegpdfnmpecc
+
+# https://chrome.google.com/webstore/detail/olympus-dao-price-ticker/mhhponffbhefikoiafdagegpdfnmpecc
 
 References :
+
 https://bugs.chromium.org/p/chromium/issues/detail?id=1173354
 
 https://groups.google.com/a/chromium.org/g/chromium-extensions/c/zVaQo3jpSpw/m/932YZv2UAgAJ
